@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/layout_back">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textSize="20sp"
+                    android:gravity="right"
+                    android:textColor="@color/colorWhite"
+                    android:layout_gravity="bottom"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="30dp"
+                android:orientation="vertical"
+                android:layout_marginHorizontal="15dp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/edt_mob"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="16dp"
+                        android:background="@drawable/edittext_back"
+                        android:hint="Mobile Number"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:paddingLeft="15dp"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/circle_back"
+                        android:layout_centerVertical="true"
+                        android:focusable="true"
+                        android:foregroundGravity="center_horizontal"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_smartphone_black_24dp"
+                        android:tint="@color/colorWhite" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp">
+
+                    <EditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/edittext_back"
+                        android:layout_marginRight="16dp"
+                        android:hint="Password"
+                        android:maxLength="10"
+                        android:inputType="textEmailAddress"
+                        android:paddingLeft="15dp"
+                        android:textSize="15sp"/>
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/circle_back"
+                        android:layout_centerVertical="true"
+                        android:focusable="true"
+                        android:foregroundGravity="center_horizontal"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_lock_black_24dp"
+                        android:tint="@color/colorWhite" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/txt_forgot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password ?"
+                    android:layout_gravity="right"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginVertical="10dp"
+                    android:textSize="15sp"
+                    android:padding="5dp"
+                    android:textColor="@color/colorBrown"/>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    app:cardElevation="10dp"
+                    app:cardCornerRadius="15dp"
+                    android:layout_marginHorizontal="30dp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Login"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/colorWhite"
+                        android:textAllCaps="false"
+                        android:textSize="15sp"
+                        android:padding="8dp"/>
+
+                </androidx.cardview.widget.CardView>
+
+               <LinearLayout
+                   android:id="@+id/lnr_register"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginVertical="15dp"
+                   android:layout_gravity="center_horizontal">
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Not have an account yet?"
+                       android:textSize="15sp"
+                       android:padding="5dp" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Register Here"
+                       android:textSize="15sp"
+                       android:textColor="@color/colorBrown"
+                       android:padding="5dp"/>
+               </LinearLayout>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Mee2Help</string>
+    <string name="runtime_permissions_txt">Runtime Permission Error</string>
+</resources>
